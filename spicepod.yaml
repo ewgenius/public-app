@@ -1,3 +1,10 @@
-name: my-spicepod
+name: public-app
 kind: Spicepod
-version: v1beta1
+version: v1
+
+datasets:
+  - name: tpch.supplier
+    description: TPC-H benchmark supplier dataset.
+    from: s3://spiceai-demo-datasets/tpch/supplier/
+    params:
+      file_format: parquet
